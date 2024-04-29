@@ -1,0 +1,113 @@
+.card {
+    width: 100%;
+    max-width: 23em;
+    background-color: rgba(186 223 255 / 0.685);
+    padding: 3em 1em;
+    border-radius: 0.8em;
+}
+
+ .card__title {
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.7em;
+    -webkit-text-stroke: 1px rgb(0 0 0);     
+    color: rgb(2 2 218);
+    &::after, 
+    &::before {
+        content: '-';
+    }
+ }
+
+ .card__country {
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1em;
+ }
+
+ .card__body {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    align-items: center;
+    margin-bottom: 2em;
+ }
+
+ .card__imge {
+    width: 100%;
+ }
+
+ .info {
+    display: grid;
+    gap: 1em;
+ }
+
+ .info-title {
+    font-size: 1em;
+    text-align: center;
+    font-weight: 500;
+    text-transform: capitalize;
+    -webkit-text-stroke: 0.8px rgb(0 0 0);
+    color: rgb(74, 158, 255);     
+    &::after, 
+    &::before {
+        content: '"';
+    }
+ }
+
+ .info-lists {
+    display: grid;
+    gap: 0.5em;
+ }
+
+ .info__item {
+    font-size: 0.8em;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+ }
+
+ .info__label {
+    color: rgb(50 50 50);
+ }
+
+ .info__value {
+    font-weight: 500;
+ }
+
+ .card__hr {
+    border: 1px dashed grey; 
+    height: 0; 
+    width: 60%;
+    margin-bottom: 2em;
+ }
+
+ .card__temp {
+    text-align: center;
+    margin-bottom: 1em;
+    font-weight: 500;
+    font-size: 2rem;
+    color: rgb(17, 48, 116);
+ }
+
+ .card__btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1em;
+    background-color: rgb(0 4 255);
+    color: rgb(0 251 255);
+    padding: 0.6em 2em;
+    border-radius: 1em;
+    &:hover {
+        filter: brightness(1.2);
+        color: rgb(211 211 254);
+        background-color: rgb(91 15 162);
+        box-shadow: 0.1rem 0.1rem 1rem rgb(69 6 129);
+    }
+ }
+ 
+ .card__btn:active {
+    background-color: rgb(5 0 46);
+    box-shadow: 0 5px rgb(102 102 102);
+    transform: translateY(2px);
+  }
+
